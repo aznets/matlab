@@ -148,8 +148,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="introduction" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> In a loop </h1>
 <p> Desplay progress numbers in a loop:</p>
-
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">% example</span>
 <pre><code>fprintf(['\n' repmat('\b', 1,13) '\n')
 for kn = 1:10
     % your codes
@@ -158,7 +156,9 @@ end
 fprintf(' Done!\n')</code></pre>
   
 <p> Struct / Cell / Variable:</p>
-<pre><code>&gt; Cel = {St.list}; % struct to cell
+<pre><code>&gt; 
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Some simple addition</span></code></pre></div>
+Cel = {St.list}; % struct to cell
 V = Cel{1};     % cell to variable
 V = ST(1).list; % struct to variable
 </code></pre>
