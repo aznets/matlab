@@ -148,13 +148,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="introduction" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> In a loop </h1>
 <p> Desplay progress numbers in a loop:</p>
-<pre><code>
-fprintf(['\n' repmat('\b', 1,13) '\n')
+<pre><code>fprintf(['\n' repmat('\b', 1,13) '\n')
 for kn = 1:10
     fprintf([repmat('\b', 1, 14) 'patches: %05d'], kn)
 end
-fprintf(' Done!\n')
-</code></pre>
+fprintf(' Done!\n')</code></pre>
   
 <p>But when you copy and paste it into the console in R you’ll see something like this:</p>
 <pre><code>&gt; for (i in 1:5){
