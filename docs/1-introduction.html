@@ -146,16 +146,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="introduction" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>This first chapter will serve as a “crash course” in R and we will superficially introduce <code>data.frames</code>, simple data manipulations and graphing, and producing a reasonable document for your output. These topics will each be covered in greater detail, but it is helpful to get the basic ideas first.</p>
-<p>R is a open-source program that is commonly used in Statistics. It runs on almost every platform and is completely free and is available at <a href="www.r-project.org" class="uri">www.r-project.org</a>. Most of the cutting-edge statistical research is first available on R.</p>
-<p>R is a script based language, so there is no point and click interface. (Actually there are packages that attempt to provide a point and click interface, but they are still somewhat primitive.) While the initial learning curve will be steeper, understanding how to write scripts will be valuable because it leaves a clear description of what steps you performed in your data analysis. Typically you will want to write a script in a separate file and then run individual lines. The saves you from having to retype a bunch of commands and speeds up the debugging process.</p>
-<p>Finding help about a certain function is very easy. At the prompt, just type <code>help(function.name)</code> or <code>?function.name</code>. If you don’t know the name of the function, your best bet is to go the the web page www.rseek.org which will search various R resources for your keyword(s). Another great resource is the coding question and answer site <a href="http://stackoverflow.com">stackoverflow</a>.</p>
-<p>The basic editor that comes with R works fairly well, but you should consider running R through the program RStudio which is located at <a href="http://www.rstudio.org">rstudio.com</a>. This is a completely free Integrated Developement Environment that works on Macs, Windows and a couple of flavors of Linux. It simplifies a bunch of more annoying aspects of the standard R GUI and supports things like tab completion.</p>
-<p>When you first open up R (or RStudio) the console window gives you some information about the version of R you are running and then it gives the prompt <code>&gt;</code>. This prompt is waiting for you to input a command. The prompt + tells you that the current command is spanning multiple lines. In a script file you might have typed something like this:</p>
-<pre><code>for( i in 1:5 ){
-    print(i)
-}</code></pre>
+<h1><span class="header-section-number">Chapter 1</span> In a loop/h1>
+<p> Desplay progress numbers in a loop:</p>
+<pre><code>
+fprintf(['\n' repmat('\b', 1,13) '\n')
+for kn = 1:10
+    fprintf([repmat('\b', 1, 14) 'patches: %05d'], kn)
+end
+fprintf(' Done!\n')
+</code></pre>
+  
 <p>But when you copy and paste it into the console in R you’ll see something like this:</p>
 <pre><code>&gt; for (i in 1:5){
 +    print(i)  
