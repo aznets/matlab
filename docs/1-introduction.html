@@ -146,8 +146,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="introduction" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> In a loop </h1>
-<p> Desplay progress numbers in a loop:</p>
+<h1><span class="header-section-number">Chapter 1</span> Tips </h1>
+  <p> <strong> Desplay progress numbers in a loop:</strong></p>
 <pre><code>fprintf(['\n' repmat('\b', 1,13) '\n')
 for kn = 1:10
     <span class="dv">% your codes </span>
@@ -155,7 +155,7 @@ for kn = 1:10
 end
 fprintf(' Done!\n')</code></pre>
   
-  <p> <span style="background-color: #FFFF00"> <strong> Converting </strong></span> Struct / Cell / Variable:</p>
+  <p> <span style="background-color: #FFFF00"> <strong> Converting </span> Struct / Cell / Variable:</strong></p>
 <pre><code>Cel = {St.list}; <span class="dv"> % struct to cell </span>
 Var = Cel{1};     <span class="dv">% cell to variable </span>
 Var = St(1).list; <span class="dv">% struct to variable </span>
